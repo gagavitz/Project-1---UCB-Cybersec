@@ -107,14 +107,9 @@ In our case, specifically these commands in this order:
 
 List of YML files:
 
-    <https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/dvwa_config.yml>
-
-    <https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/elk_config.yml>
-
-    <https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/install-filebeat.yml>
-
-    <https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/install-metricbeat.yml>
-
-    <https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/Files/Filebeat.yml>
-
-    <https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/Files/Metricbeat.yml>
+https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/dvwa_config.yml
+https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/elk_config.yml
+https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/install-filebeat.yml
+https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/install-metricbeat.yml
+https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/Files/Filebeat.yml
+https://github.com/gagavitz/Project-1---UCB-Cybersec/blob/master/Ansible/Files/Metricbeat.yml
