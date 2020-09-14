@@ -1,0 +1,12 @@
+metricbeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+
+## Save this file as metricbeat.yml in /etc/ansible/files
+## Then we can copy this file using the copy module in the playbook to replace the /etc/metricbeat/metricbeat.yml file
+
+output.elasticsearch:
+  hosts: ["10.1.0.5:9200"]
+  username: "elastic"
+  password: "changeme"
+setup.kibana:
+  host: "10.1.0.5:5601"

@@ -1,0 +1,27 @@
+---
+#Header for filebeat installation on the dvws - install-filebeat.yml
+- name: Install and configure filebeat
+  hosts: webservers
+  remote_user: sysadmin
+  become: true
+  tasks:
+
+  - name: Download filebeat .deb file
+    command: curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb
+
+  - name: Install filebeat .deb
+    command: dpkg -i filebeat-7.6.1-amd64.deb
+
+  - name: Modify the /etc/filebeat/filebeat.yml file for our ELK server configuration
+    copy:
+      src: /etc/ansible/files/filebeat.yml
+      dest: /etc/filebeat/filebeat.yml
+
+  - name: Enable and configure the system module
+    command: filebeat modules enable system
+
+  - name: FileBeat Setup
+    command: filebeat setup
+
+  - name: Start the FileBeat service
+    command: service filebeat start
